@@ -40,7 +40,7 @@ class SaleItemService():
         cur.execute(sql)
         sales = cur.fetchall()
 
-        print("Here is the update list of all registered sales ordered by the seller with the highest amount sold \n")
+        print("Here is the updated list of all registered sales ordered by the seller with the highest amount sold \n")
 
         headers = ['Seller Name', 'Customer Name', 'Date of Sale', 'Sale Item Name', 'Sale Value']
         
