@@ -29,3 +29,9 @@ pip install -r requirements
 ```
 python app.py
 ```
+
+## References
+```
+https://github.com/nirum/tableprint
+https://docs.python.org/3/tutorial/venv.html
+```
