@@ -50,7 +50,11 @@ class SalesService():
         elif (input_type == float):
             try:
                 float(input_value)
-                return True
+
+                if float(input_value) > 0:
+                    return True
+                else:
+                    return False
             except:
                 return False
 
