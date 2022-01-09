@@ -40,9 +40,12 @@ class SaleItemService():
         cur.execute(sql)
         sales = cur.fetchall()
 
-        print("Here is the updated list of all registered sales ordered by the seller with the highest amount sold \n")
+        if(len(sales) > 0):
+            print("Here is the updated list of all registered sales ordered by the seller with the highest amount sold \n")
 
-        headers = ['Seller Name', 'Customer Name', 'Date of Sale', 'Sale Item Name', 'Sale Value']
-        
-        #Library that prints table with the content
-        tp.table(sales, headers)
+            headers = ['Seller Name', 'Customer Name', 'Date of Sale', 'Sale Item Name', 'Sale Value']
+            
+            #Library that prints table with the content
+            tp.table(sales, headers)
+        else:
+            print("There is no registered sales \n")
